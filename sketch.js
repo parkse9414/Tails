@@ -20,11 +20,12 @@ function draw()
 	trailY[0] = (mouseY + trailY[0] * 9) / 10;
     ellipse(trailX[0],trailY[0],80,80)
 
+
     for (var i = 1; i < 4; i + 1)
     {
 	trailX[i] = (trailX[i-1] + trailX[i] * 9) / 10;
 	trailY[i] = (trailY[i-1] + trailY[i] * 9) / 10;
-    ellipse(trailX[1],trailY[1],80,80)
+    ellipse(trailX[i],trailY[i],80,80)
     }
 
 }
